@@ -12,7 +12,7 @@ public class Init {
 		
 		System.out.println("******      Bem-vindo ao iFace!     ******\n");
 		System.out.println("Escolha uma opção:");
-		System.out.println("1. Efetuar Login\n2. Realizar cadastro\n");
+		System.out.println("1. Efetuar Login\n2. Realizar cadastro\n0. Sair");
 		System.out.println("******************************************");
 		
 		String action = input.nextLine();
@@ -24,6 +24,8 @@ public class Init {
 		case "2":
 			new Action().signUP();
 			break;
+		case "0":
+			System.exit(0);
 		default:
 			System.out.println("Entrada incorreta!");
 			executar();
